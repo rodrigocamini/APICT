@@ -1,0 +1,80 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "ID",
+      "Title",
+      "Description",
+      "PageCount",
+      "Excerpt",
+      "PublishDate"
+    ],
+    "properties": {
+      "ID": {
+        "$id": "#/items/properties/ID",
+        "type": "integer",
+        "title": "The Id Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "Title": {
+        "$id": "#/items/properties/Title",
+        "type": "string",
+        "title": "The Title Schema",
+        "default": "",
+        "examples": [
+          "string"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "Description": {
+        "$id": "#/items/properties/Description",
+        "type": "string",
+        "title": "The Description Schema",
+        "default": "",
+        "examples": [
+          "string"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "PageCount": {
+        "$id": "#/items/properties/PageCount",
+        "type": "integer",
+        "title": "The Pagecount Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "Excerpt": {
+        "$id": "#/items/properties/Excerpt",
+        "type": "string",
+        "title": "The Excerpt Schema",
+        "default": "",
+        "examples": [
+          "string"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "PublishDate": {
+        "$id": "#/items/properties/PublishDate",
+        "type": "string",
+        "title": "The Publishdate Schema",
+        "default": "",
+        "examples": [
+          "2019-11-27T23:38:12.171Z"
+        ],
+        "pattern": "^(.*)$"
+      }
+    }
+  }
+}
